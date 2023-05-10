@@ -1,0 +1,11 @@
+.cache
+localdata.json
+__pycache__
+.upm
+error.txt
+pyproject.toml
+venv
+Music
+.breakpoints
+poetry.lock
+keys.json
