@@ -1,5 +1,6 @@
 from flask import Flask
-
+import requests
+from os import environ
 from threading import Thread
 
 app = Flask('')
@@ -7,8 +8,8 @@ app = Flask('')
 
 @app.route('/')
 def home():
-
-  return "I'm alive"
+  botun = requests.get(f"https://api.telegram.org/bot{environ['Telegram_BotKey']}/getMe").json()['result']['username']
+  return f"""<meta http-equiv="refresh" content="2; URL=https://t.me/{botun}" /> If you see this, the bot is working. Start using the Bot by sending /start"""
 
 
 def run():
