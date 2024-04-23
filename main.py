@@ -1,6 +1,6 @@
-# pip install -U --force spotdl pytz
-# pip install python-telegram-bot==13.15 pytz spotdl
-# ffmpeg
+# pip3 install -U --force spotdl pytz python-telegram-bot==13.15 flask
+# pip3 install python-telegram-bot==13.15 pytz spotdl flask
+# spotdl --download-ffmpeg
 
 import requests
 import json
